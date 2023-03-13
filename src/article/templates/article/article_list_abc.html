@@ -1,0 +1,11 @@
+{% extends "base/index.html" %}
+
+{% block content %}
+
+<div>
+    {% for obj in articles %}
+    <p>{{obj.id}}-{{obj.title}}</p>
+    {% endfor %}
+</div>
+
+{% endblock content %}

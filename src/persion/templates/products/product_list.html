@@ -1,0 +1,15 @@
+{% extends "base/index.html" %}
+
+{% block head %}
+<title>product details</title>
+{% endblock head %}
+
+{% block content %}
+
+{% for product in object %}
+<h5>{{product.title}}</h5>
+<p>{% if product.description != None and product.description != "" %}{{product.description}} {% else %} description
+    comming soon {% endif %}</p>
+{% endfor %}
+
+{% endblock content %}
